@@ -1,11 +1,40 @@
 Rails.application.routes.draw do
+  # get 'organizations/index'
+
+  # get 'organizations/show'
+
+  # get 'organizations/new'
+
+  # get 'organizations/edit'
+
+  # get 'certifications/index'
+
+  # get 'certifications/show'
+
+  # get 'certifications/new'
+
+  # get 'certifications/edit'
+
+  get 'static_pages/home'
+
+  get 'staff', to: 'static_pages#staff'
+
+  get 'contact_us', to: 'static_pages#contact_us'
+
+  get 'resource_library', to: 'static_pages#resource_library'
+
+  get 'family_support_standards', to: 'static_pages#family_support_standards'
+
+  get 'policy_and_planning', to: 'static_pages#policy_and_planning'
+
+  get 'committees', to: 'static_pages#committees'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'application#hello' 
-
+  root 'static_pages#home'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -14,6 +43,14 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resources :categories do
+    resources :trainings
+  end
+
+  resources :certifications
+
+  resources :organizations
+
 
   # Example resource route with options:
   #   resources :products do
