@@ -6,7 +6,117 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+  <div class= "top-bar"></div>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+<!-- Home -->
+            <li class="active"><%= link_to 'Home', root_path %><span class="sr-only">(current)</span></a></li>
+<!-- About -->
+             <li><a href="#">About</a></li>
+ <!-- Family Support -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Family Support <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">About Families & Family Support</a></li>
+                <li><a href="#">Family Support Standards</a></li>
+                <li><a href="#">Family Support Principles</a></li>
+                <li><a href="#">Family Support Resource Centers</a></li>
+                <li><a href="#">Origins of San Francisco Family Support Network</a></li>
+              </ul>
+            </li>
+<!-- Membership -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Membership <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Family Support Provider Members</a></li>
+                <li><a href="#">Funder Members</a></li>
+                <li><a href="#">Affiliate Members</a></li>
+                <li><a href="#">Friend Members</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Join Us!</a></li>
+              </ul>
+            </li>
+<!-- Training -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Training <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Core Family Support Trainings</a></li>
+                <li><a href="#">Standards Application Trainings</a></li>
+                <li><a href="#">Case Management Trainings</a></li>
+                <li><a href="#">Family Economic Success Trainings</a></li>
+                <li><a href="#">Management Trainings</a></li>
+                <li><a href="#">School-related Topics Trainings</a></li>
+                <li><a href="#">Program Self-Assessment Facilitated Trainings</a></li>
+                <li role="separator" class="divider"></li>
+                <li><%= link_to 'All Training Categories', categories_path %></li>
+\              </ul>
+            </li>
+
+<!-- Resource Library -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources Library<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Family Support Topics</a></li>
+                <li><a href="#">Family Economic Success</a></li>
+                <li><a href="#">Lending Library</a></li>
+                <li><a href="#">Other Resources</a></li>
+              </ul>
+            </li>
+<!-- Policy & Planning -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Policy & Planning <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                
+              </ul>
+
+            </li>
+<!-- Committees -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Committees <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+<!-- Login/Register -->
+            <li><a href="#">Login/Register</a></li>
+
+            <li><%=link_to image_tag("logo.png")%></li>
+          </ul>
+
+<!--           <ul class="nav navbar-nav navbar-right">
+
+          </ul> -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
 <%= yield %>
 
