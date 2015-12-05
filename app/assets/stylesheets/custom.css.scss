@@ -1,3 +1,19 @@
+/*Dark Cyan  Hex Code #008B8B
+RGB 0, 139, 139
+
+Medium Jungle Green   Hex Code #1BB1B1
+Spiro Disco Ball      Hex Code #OF93B2
+Tufts Blue      Hex Code #41D7D7
+
+Orange
+Tomato  Hex Code #FF613C
+UA Red  Hex Code # D93812
+Coral      Hex Code #FF8062
+
+Neutral
+
+Lemon Hex Code # FFF6DB*/
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome-sprockets";
@@ -5,8 +21,8 @@
 
 
 .top-bar {
-  height: 7px;
-  background: #FF613C;
+  height: 5px;
+  background: #D93812;
   margin-bottom: 1px;
 }
 
@@ -36,8 +52,12 @@
   background-color: white;
 }
 
+#headerstuff {
+  background: #5a84fb;
+}
+
 .jumbotron {
-  height: 150px;
+  height: 350px;
   background-color: transparent;
   padding: 0px;
   border: 0px;
@@ -51,7 +71,7 @@
   margin-top: 1px;
   padding-bottom: 15px;
   overflow:auto;
-  height:150px;
+  height:350px;
   background-color: transparent;
   border-bottom: 0px;
 }
@@ -78,19 +98,38 @@
   color: #FFF6DB;
 }
 
+.boxcontainer {
+  background-color: #FFF6DB;
+  margin-top: -28px;
+}
+
 #boxes {
   color: #ffffff;
-  background: #41D7D7;
   height: 200px;
   text-align: justify;
   text-shadow: 1px 1px #000000;
-  margin-top: 85px;
   padding: 10px;
+  margin-top: 20px;
+  background-color: #9bb7c5;
+  border: 2px solid white;
 }
 
 #boxes h2 {
   text-align: center;
+  color: white;
 }
+
+.leftbox {
+/*  background-color: #008B8B;
+*/}
+
+.middlebox {
+/*  background-color: #FFF6DB;
+*/}
+
+.rightbox {
+/*  background-color: #41D7D7;
+*/}
 
 .leftbox a.learnmore {
   position: absolute;
@@ -116,7 +155,9 @@
   font-weight: bold;
 }
 
-body {
+.intro {
+  width: 100%;
+  height: auto;
   background-image: image-url('bridgelogo2.png');
 }
 
